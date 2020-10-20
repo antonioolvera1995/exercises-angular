@@ -1,0 +1,17 @@
+.section-1{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+    margin: 1em;
+    
+}
+
+.section-1 >input{
+   padding: 0.3em;
+    font-size: 2em;
+}
+.section-1 >p{
+margin-left: 1em;
+    font-size: 2em;
+}

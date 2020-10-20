@@ -1,0 +1,304 @@
+<div (click)="autocomplet()" class="autocomplet sombra-butt">
+    <div>
+        <p class="autocomplet-text">Autocompletar</p>
+    </div>
+</div>
+
+<div class="dialog">
+    <div class="dialog-sub">
+
+
+    </div>
+
+</div>
+<main class="main">
+    <div class="div-principal">
+
+
+        <!-- --------------------header---------------------- -->
+        <header class="header-1">
+            <div>
+                <h1>Rellene el formulario</h1>
+                <h2>Ingrese todos los datos para enviar el formulario. Los datos opcionales no seran necesarios,
+                    pero los demas serán obligatorios.</h2>
+            </div>
+        </header>
+
+
+
+        <!-- --------------------left---------------------- -->
+        <section class="section-left">
+            <div>
+                <h3 class="black">Dirección de Envio</h3>
+            </div>
+
+            <div class="div-row">
+
+                <div class="div-colum margin-right">
+                    <p>Nombre</p>
+                    <input [(ngModel)]="name" id="et-name" class="style-input sombra-in" type="text">
+                </div>
+
+                <div class="div-colum margin-left">
+                    <p>Apellidos</p>
+                    <input [(ngModel)]="lastName" id="et-lastname" class="style-input sombra-in" type="text">
+                </div>
+
+            </div>
+            <div class="div-colum">
+
+                <p>Nombre de usuario</p>
+                <input [(ngModel)]="userName" id="et-username" class="style-input sombra-in" type="text">
+            </div>
+            <div class="div-colum">
+                <p>Correo electrónico <span>Opcional</span></p>
+                <input [(ngModel)]="email" id="et-email" class="style-input sombra-in" type="email">
+
+            </div>
+            <div class="div-colum">
+                <p>Dirección</p>
+                <input  [(ngModel)]="adress"id="et-adress" class="style-input sombra-in" type="text">
+
+            </div>
+            <div class="div-colum">
+
+                <p>Dirección 2 <span>Opcional</span></p>
+                <input [(ngModel)]="adress2" id="et-adress2" class="style-input sombra-in" type="text">
+            </div>
+            <div class="div-row">
+
+                <div class="div-colum">
+                    <p>Pais</p>
+                    <input [(ngModel)]="country" id="et-country" class="style-input sombra-in" type="text">
+                </div>
+
+                <div class="div-colum margin-right margin-left">
+                    <p>Provincia</p>
+                    <input [(ngModel)]="province" id="et-province" class="style-input sombra-in" type="text">
+                </div>
+
+                <div class="div-colum">
+                    <p>Código Postal</p>
+                    <input [(ngModel)]="postal" id="et-postal" class="style-input sombra-in" type="number">
+                </div>
+
+            </div>
+            <!-- --------------eleccion------------- -->
+
+            <div class="choice bordes">
+
+                <div class="choice-1">
+                    <input id="check1" type="checkbox">
+                    <p>La dirección de envío es la misma que mi dirección de facturación</p>
+                </div>
+                <div class="choice-1">
+                    <input id="check2" type="checkbox">
+                    <p>Guarde esta información para la próxima vez</p>
+                </div>
+
+            </div>
+            <!-- --------------eleccion------------- -->
+
+            <div class="payment bordes">
+
+
+                <div class="payment-sub">
+                    <div>
+                        <p class="title-radio">Payment</p>
+                    </div>
+                    <div>
+                        <div><input id="radio1" type="radio" name="radio"></div>
+
+                        <div>
+                            <p class="text-radio">Tarjeta de credito</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div><input id="radio2" type="radio" name="radio"></div>
+                        <div>
+                            <p class="text-radio">Tarjeta de debito</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div><input id="radio3" type="radio" name="radio"></div>
+                        <div>
+                            <p class="text-radio">Paypal</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="div-row">
+                    <div class="div-colum margin-right">
+                        <p>Nombre de la tarjeta</p>
+                        <input [(ngModel)]="card" id="et-card" class="style-input sombra-in" type="text">
+                    </div>
+
+                    <div class="div-colum margin-left">
+                        <p>Numero de tarjeta</p>
+                        <input [(ngModel)]="numcard" id="et-numcard" class="style-input sombra-in" type="number">
+                    </div>
+
+                </div>
+
+
+
+                <div class="div-row alig-left">
+
+                    <div class="margin-right caduc-recort">
+                        <p>Caducidad</p>
+                        <input [(ngModel)]="expiration" id="et-expiration" class="style-input sombra-in" type="date">
+                    </div>
+
+                    <div class="margin-left cvv-recort">
+                        <p>CVV</p>
+                        <input [(ngModel)]="cvv" id="et-cvv" class="style-input sombra-in" type="number">
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+            <!-- -------------------button-------------------- -->
+
+            <div (click)="print()" id="bt-fin" class="button sombra-butt">
+                <span>Pulsar para finalizar tu compra</span>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- --------------------right---------------------- -->
+        <section class="section-right">
+
+            <div>
+
+                <div class="title-carro">
+                    <div class="title-carro-text">
+                        <p class="black">Tu carro</p>
+                    </div>
+                    <div class="title-carro-cantidad">
+                        <p>3</p>
+                    </div>
+                </div>
+
+                <div class="div-right-main">
+
+
+
+                    <div class="tu-carro">
+
+                        <div class="tu-carro-sub-1">
+                            <div>
+                                <p class="texto-carro black">Nombre del producto</p>
+                            </div>
+                            <div class="carro-precio">
+                                <p class="texto-carro">20€</p>
+                            </div>
+                        </div>
+                        <div class="tu-carro-sub-2">
+                            <p class="texto-carro-mini">patatas</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="tu-carro">
+
+                        <div class="tu-carro-sub-1">
+                            <div>
+                                <p class="texto-carro black">Segundo producto</p>
+                            </div>
+                            <div class="carro-precio">
+                                <p class="texto-carro">10€</p>
+                            </div>
+                        </div>
+                        <div class="tu-carro-sub-2">
+                            <p class="texto-carro-mini">lechugas</p>
+                        </div>
+                    </div>
+
+
+                    <div class="tu-carro">
+
+                        <div class="tu-carro-sub-1">
+                            <div>
+                                <p class="texto-carro black">Tercer producto</p>
+                            </div>
+                            <div class="carro-precio">
+                                <p class="texto-carro">12€</p>
+                            </div>
+                        </div>
+                        <div class="tu-carro-sub-2">
+                            <p class="texto-carro-mini">berenjenas</p>
+                        </div>
+                    </div>
+
+
+                    <div class="tu-carro">
+
+                        <div  class="tu-carro-sub-1">
+                            <div>
+                                <p class="texto-carro black green">Promocion</p>
+                            </div>
+                            <div class="carro-precio">
+                                <p class="texto-carro green">-5€</p>
+                            </div>
+                        </div>
+                        <div class="tu-carro-sub-2">
+                            <p class="texto-carro-mini green">descuento</p>
+                        </div>
+                    </div>
+
+
+                    <div class="tu-carro">
+
+                        <div class="tu-carro-sub-1">
+                            <div>
+                                <p class="texto-carro black">Total</p>
+                            </div>
+                            <div class="carro-precio">
+                                <p class="texto-carro black">37€</p>
+                            </div>
+                        </div>
+                        <div class="tu-carro-sub-2">
+                            <p class="texto-carro-mini">Euros</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="promo">
+                    <div class="et-promo">
+                        <input [(ngModel)]="promo" id="et-promo" class="sombra-in" type="text">
+
+                    </div>
+                    <div id="bt-promo" class="bt-promo sombra-butt-2">
+                        <p>VALIDAR</p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- //---------------- -->
+
+
+
+
+
+
+        </section>
+
+
+    </div>
+
+</main>

@@ -119,6 +119,7 @@
           }
         }
       }
+<<<<<<< HEAD
     }
   },
   "defaultProject": "ejercicios-angular",
@@ -126,3 +127,8 @@
     "analytics": "7abd21bb-1be4-404b-906a-0ce155c0f3ee"
   }
 }
+=======
+    }},
+  "defaultProject": "ejercicios-angular"
+}
+>>>>>>> master

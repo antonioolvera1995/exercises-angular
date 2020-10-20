@@ -1,0 +1,19 @@
+.ul-1{
+    
+    background-color: black;
+    padding: 1em;
+    user-select: none;
+}
+
+.li-1{
+    padding: 1em;
+    color: white;
+    font-size: 1.2em;
+    margin: 1em;
+    font-weight: 600;
+
+}
+
+.li-1 >p:hover{
+    
+}

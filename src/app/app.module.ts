@@ -8,6 +8,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { EventsComponent } from './exercises/events/events.component';
 import { FormularioComponent } from './exercises/formulario/formulario.component';
+import { IniComponent } from './ini/ini.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormularioComponent } from './exercises/formulario/formulario.component
     HeaderComponent,
     FooterComponent,
     EventsComponent,
-    FormularioComponent
+    FormularioComponent,
+    IniComponent
   ],
   imports: [
     BrowserModule,

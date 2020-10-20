@@ -1,0 +1,19 @@
+section{
+
+    margin: 3em;
+}
+
+.clas1{
+    color: black;
+    font-size: 1em;
+}
+
+.clas2{
+    color: rgb(255, 0, 0);
+    font-size: 1.3em;
+}
+
+.clas3{
+    color: rgb(51, 255, 0);
+    font-size: 2em;
+}

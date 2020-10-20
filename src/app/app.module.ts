@@ -9,6 +9,10 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { EventsComponent } from './exercises/events/events.component';
 import { FormularioComponent } from './exercises/formulario/formulario.component';
 import { IniComponent } from './ini/ini.component';
+import { StylesComponent } from './exercises/styles/styles.component';
+import { IfElseComponent } from './exercises/if-else/if-else.component';
+import { ClassComponent } from './exercises/class/class.component';
+import { ForComponent } from './exercises/for/for.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { IniComponent } from './ini/ini.component';
     FooterComponent,
     EventsComponent,
     FormularioComponent,
-    IniComponent
+    IniComponent,
+    StylesComponent,
+    IfElseComponent,
+    ClassComponent,
+    ForComponent
   ],
   imports: [
     BrowserModule,

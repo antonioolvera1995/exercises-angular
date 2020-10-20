@@ -1,0 +1,17 @@
+
+<section>
+<p *ngIf="!show;else text2">Lorem ipsum dolor sit amet.</p>
+<button (click)="show = !show;">Click Me</button>
+
+
+
+<ng-template #text2>
+    <p>---------ng-template-----------</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque amet ut repudiandae molestiae distinctio temporibus cupiditate quam molestias sequi laudantium fugiat pariatur, velit perspiciatis omnis rerum nemo quasi, iste nostrum.
+    Eligendi cum dolor explicabo ipsa perferendis ex, cupiditate atque sed laboriosam, nesciunt tempora officia voluptas quas nisi architecto omnis sunt vel incidunt ratione quasi, nobis culpa asperiores! Rerum, recusandae officia.
+    Facilis quis fugiat fuga sint repellendus optio unde quidem veritatis inventore blanditiis nostrum, consequatur provident expedita soluta error sunt animi, debitis nesciunt. Optio sunt corrupti perspiciatis quos amet illo eligendi.</p>
+</ng-template>
+<p *ngIf="show">---------NO ng-template-----------</p>
+<p *ngIf="show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, eos eum molestiae quam officia culpa accusantium earum pariatur facilis? Possimus nostrum reiciendis doloremque corporis expedita quasi praesentium, deleniti eius culpa!Hic ex maiores, aspernatur accusantium dolores praesentium possimus nihil dolorem ipsum explicabo eaque vel, fuga odio molestiae harum, dolore maxime repellendus eos iste rem impedit. Eaque alias pariatur ipsam obcaecati!</p>
+
+</section>

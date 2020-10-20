@@ -1,0 +1,11 @@
+section{
+
+    margin: 3em;
+}
+
+ul{
+    margin: 1em;
+}
+ul >li{
+    margin: 0.3em;
+}

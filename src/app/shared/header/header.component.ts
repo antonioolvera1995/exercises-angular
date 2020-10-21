@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { RutasService } from "src/app/shared/services/rutas.service";
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -9,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 
 export class HeaderComponent implements OnInit {
   title:string = 'Header';
-  constructor() { }
+  links:string[];
+  constructor(rutas:RutasService) { 
+    this.links = rutas.getRutas();
+  }
 
   ngOnInit(): void {
   }

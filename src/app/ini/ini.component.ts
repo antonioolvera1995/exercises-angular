@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RutasService } from "src/app/shared/services/rutas.service";
 
 @Component({
   selector: 'app-ini',
@@ -7,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IniComponent implements OnInit {
 
-  links:string[] = ['Formulario','Service', 'Events', 'Styles', 'If-Else', 'Class', 'For'];
-  constructor() { }
+  links:string[];
+  constructor(rutas:RutasService) { 
+    this.links = rutas.getRutas();
+  }
 
   ngOnInit(): void {
   }

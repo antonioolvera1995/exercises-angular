@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IniComponent implements OnInit {
 
-  links:string[] = ['Formulario', 'Events', 'Styles', 'If-Else', 'Class', 'For'];
+  links:string[] = ['Formulario','Service', 'Events', 'Styles', 'If-Else', 'Class', 'For'];
   constructor() { }
 
   ngOnInit(): void {

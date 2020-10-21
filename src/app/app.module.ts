@@ -1,3 +1,6 @@
+//--------services------
+//import {PersonasService  } from "./shared/services/personas.service";
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
@@ -13,6 +16,8 @@ import { StylesComponent } from './exercises/styles/styles.component';
 import { IfElseComponent } from './exercises/if-else/if-else.component';
 import { ClassComponent } from './exercises/class/class.component';
 import { ForComponent } from './exercises/for/for.component';
+import { ServiceComponent } from './exercises/service/service.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +30,8 @@ import { ForComponent } from './exercises/for/for.component';
     StylesComponent,
     IfElseComponent,
     ClassComponent,
-    ForComponent
+    ForComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,

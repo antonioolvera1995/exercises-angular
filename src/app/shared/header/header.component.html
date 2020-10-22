@@ -1,7 +1,7 @@
 <header  class="header-1">
 
 <ul class="ul-1">
-    <li class="li-1" *ngFor="let item of links" [routerLink]="['/',item.toLocaleLowerCase()]" ><p>{{item}}</p></li>
+    <li class="li-1"  [routerLinkActive]="'active'" *ngFor="let item of links" [routerLink]="['/',item.toLocaleLowerCase()]" ><p>{{item}}</p></li>
 </ul>
 
 

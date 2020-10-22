@@ -7,10 +7,26 @@
     align-items: center;
 }
 
-.title{
-    color: white;
+
+
+
+
+
+.ul-1{
+    display: flex;
+list-style: none;
+    user-select: none;
 }
 
-.azul{
-    background-color: black;
+.li-1{
+    
+    color: white;
+    font-size: 1.2em;
+    margin: 1em;
+    font-weight: 600;
+
+}
+
+.li-1 >p:hover{
+    
 }

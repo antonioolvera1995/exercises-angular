@@ -17,6 +17,7 @@ import { IfElseComponent } from './exercises/if-else/if-else.component';
 import { ClassComponent } from './exercises/class/class.component';
 import { ForComponent } from './exercises/for/for.component';
 import { ServiceComponent } from './exercises/service/service.component';
+import { PeticionesHttpComponent } from './exercises/peticiones-http/peticiones-http.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { ServiceComponent } from './exercises/service/service.component';
     IfElseComponent,
     ClassComponent,
     ForComponent,
-    ServiceComponent
+    ServiceComponent,
+    PeticionesHttpComponent
   ],
   imports: [
     BrowserModule,

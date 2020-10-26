@@ -19,6 +19,8 @@ import { ForComponent } from './exercises/for/for.component';
 import { ServiceComponent } from './exercises/service/service.component';
 import { PeticionesHttpComponent } from './exercises/peticiones-http/peticiones-http.component';
 
+import { HttpClientModule } from "@angular/common/http";
+
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import { PeticionesHttpComponent } from './exercises/peticiones-http/peticiones-
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule 
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

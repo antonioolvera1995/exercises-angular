@@ -1,4 +1,7 @@
+
 import { Component, OnInit } from '@angular/core';
+import { UsersService } from 'src/app/shared/services/users.service';
+
 
 @Component({
   selector: 'app-peticiones-http',
@@ -7,7 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PeticionesHttpComponent implements OnInit {
 
-  constructor() { }
+
+  users:any[]=[];
+  constructor(usersService:UsersService) {
+
+    this.users = usersService.getUser();
+  }
 
   ngOnInit(): void {
   }

@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class RutasService {
 
-  rutas:string[] = ['Inicio','Formulario','Service', 'Events', 'Styles', 'If-Else', 'Class', 'For'];
+  rutas:string[] = ['Inicio', 'peticiones','Formulario','Service', 'Events', 'Styles', 'If-Else', 'Class', 'For'];
   constructor() { }
 
   getRutas():string[]{

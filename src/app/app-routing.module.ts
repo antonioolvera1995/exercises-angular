@@ -5,6 +5,7 @@ import { EventsComponent } from './exercises/events/events.component';
 import { ForComponent } from './exercises/for/for.component';
 import { FormularioComponent } from './exercises/formulario/formulario.component';
 import { IfElseComponent } from './exercises/if-else/if-else.component';
+import { PeticionesHttpComponent } from './exercises/peticiones-http/peticiones-http.component';
 import { ServiceComponent } from './exercises/service/service.component';
 import { StylesComponent } from './exercises/styles/styles.component';
 import { IniComponent } from './ini/ini.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'class', component: ClassComponent },
   { path: 'for', component: ForComponent },
   { path: 'service', component: ServiceComponent },
+  { path: 'peticiones', component: PeticionesHttpComponent },
 
   { path: '', component: IniComponent , pathMatch: 'full' },
   { path: '**', component: IniComponent, pathMatch: 'full' }

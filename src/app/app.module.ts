@@ -20,6 +20,8 @@ import { ServiceComponent } from './exercises/service/service.component';
 import { PeticionesHttpComponent } from './exercises/peticiones-http/peticiones-http.component';
 
 import { HttpClientModule } from "@angular/common/http";
+import { TemplateFormComponent } from './exercises/template-form/template-form.component';
+import { ReactFormComponent } from './exercises/react-form/react-form.component';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { HttpClientModule } from "@angular/common/http";
     ClassComponent,
     ForComponent,
     ServiceComponent,
-    PeticionesHttpComponent
+    PeticionesHttpComponent,
+    TemplateFormComponent,
+    ReactFormComponent
   ],
   imports: [
     BrowserModule,

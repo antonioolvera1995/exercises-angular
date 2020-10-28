@@ -29,9 +29,9 @@
         <div class="form-group row">
             <label class="col-2 col-form-label">Email</label>
             <div class="col-8">
-                <input minlength="2" class="form-control" type="email" name="email" placeholder="Escribe tu email" [ngModel]="emaill"
-                    [ngClass]="{'is-invalid': email.invalid  && email.touched}"
-                    [ngClass]="{'is-valid': email.valid  && email.touched}" #email="ngModel" required>
+                <input minlength="2"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="form-control" type="email" name="email" placeholder="Escribe tu email" [ngModel]="emaill"
+                    [ngClass]="{'is-invalid': email.invalid  && email.touched,'is-valid': email.valid  && email.touched }"
+                     #email="ngModel" required>
             </div>
         </div>
 

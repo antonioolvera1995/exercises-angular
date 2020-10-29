@@ -7,8 +7,9 @@ import { FormularioComponent } from './exercises/formulario/formulario.component
 
 import { IfElseComponent } from './exercises/if-else/if-else.component';
 import { PeticionesHttpComponent } from './exercises/peticiones-http/peticiones-http.component';
+import { PipersComponent } from './exercises/pipers/pipers.component';
+import { PipesCustomComponent } from './exercises/pipes-custom/pipes-custom.component';
 import { ReactFormComponent } from './exercises/react-form/react-form.component';
-import { ReactForm2Component } from './exercises/react-form2/react-form2.component';
 import { ServiceComponent } from './exercises/service/service.component';
 import { StylesComponent } from './exercises/styles/styles.component';
 import { TemplateFormComponent } from './exercises/template-form/template-form.component';
@@ -25,6 +26,8 @@ const routes: Routes = [
   { path: 'for', component: ForComponent },
   { path: 'service', component: ServiceComponent },
   { path: 'peticiones', component: PeticionesHttpComponent },
+  { path: 'pipes', component: PipersComponent },
+  { path: 'pipes-custom', component: PipesCustomComponent },
   { path: '', component: IniComponent , pathMatch: 'full' },
   { path: '**', component: IniComponent, pathMatch: 'full' }
 

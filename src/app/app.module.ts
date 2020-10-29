@@ -22,6 +22,10 @@ import { PeticionesHttpComponent } from './exercises/peticiones-http/peticiones-
 import { HttpClientModule } from "@angular/common/http";
 import { TemplateFormComponent } from './exercises/template-form/template-form.component';
 import { ReactFormComponent } from './exercises/react-form/react-form.component';
+import { PipersComponent } from './exercises/pipers/pipers.component';
+import { PipesCustomComponent } from './exercises/pipes-custom/pipes-custom.component';
+import { CapitalizePipe } from './pipes/capitalize.pipe';
+import { SecurDomPipe } from './pipes/secur-dom.pipe';
 
 
 @NgModule({
@@ -40,6 +44,10 @@ import { ReactFormComponent } from './exercises/react-form/react-form.component'
     PeticionesHttpComponent,
     TemplateFormComponent,
     ReactFormComponent,
+    PipersComponent,
+    PipesCustomComponent,
+    CapitalizePipe,
+    SecurDomPipe,
   ],
   imports: [
     BrowserModule,

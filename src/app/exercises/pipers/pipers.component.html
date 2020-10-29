@@ -1,0 +1,121 @@
+<h1>Angular Pipes</h1>
+
+<div class="row">
+    <div class="col">
+
+        <table class="table">
+            <thead>
+                <tr class="thead-dark">
+                    <th>Valor de la variable</th>
+                    <th>Pipe</th>
+                    <th>Out</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>{{nombre}}</th>
+                    <th>UperCase</th>
+                    <th >{{nombre | uppercase}}</th>
+                </tr>
+
+                <tr>
+                    <th>{{nombre}}</th>
+                    <th>LowerCase</th>
+                    <th >{{nombre | lowercase}}</th>
+                </tr>
+
+
+                <tr>
+                    <th>{{lista}}</th>
+                    <th>Slice</th>
+                    <th >{{lista | slice:1:2}}</th>
+                </tr>
+
+                <tr>
+                    <th>{{nombreLargo}}</th>
+                    <th>Slice en String</th>
+                    <th >{{nombreLargo | slice:0:5}}</th>
+                </tr>
+
+                <tr>
+                    <th>{{PI}}</th>
+                    <th>number</th>
+                    <th >{{PI | number:'0.0-4'}}</th>
+                </tr>
+
+                <tr>
+                    <th>{{pasajeros}}</th>
+                    <th>number</th>
+                    <th >{{pasajeros | number:'3.0-4'}}</th>
+                </tr>
+
+                <tr>
+                    <th>{{iva}}</th>
+                    <th>percent</th>
+                    <th >{{iva | percent}}</th>
+                </tr>
+
+                <tr>
+                    <th>{{iva}}</th>
+                    <th>percent custom</th>
+                    <th >{{iva | percent:'2.2'}}</th>
+                </tr>
+
+               
+                <tr>
+                    <th>{{salario}}</th>
+                    <th>currency</th>
+                    <th >{{salario | currency}}</th>
+                </tr>
+
+                <tr>
+                    <th>{{salario}}</th>
+                    <th>currency eur</th>
+                    <th >{{salario | currency:'EUR'}}</th>
+                </tr>
+
+                <tr>
+                    <th>{{salario}}</th>
+                    <th>currency eur</th>
+                    <th >{{salario | currency:'EUR':'symbol':'1.0-1'}}</th>
+                </tr>
+
+
+                <tr>
+                    <th>{{personje}}</th>
+                    <th>json</th>
+                    <th ><pre>{{personje | json}}</pre></th>
+                </tr>
+
+                <tr>
+                    <th>{{dataLoader}}</th>
+                    <th>async</th>
+                    <th >{{dataLoader | async}}</th>
+                </tr>
+
+                <tr>
+                    <th>{{fecha}}</th>
+                    <th>date</th>
+                    <th >{{fecha | date}}</th>
+                </tr>
+
+                <tr>
+                    <th>{{fecha}}</th>
+                    <th>date custom</th>
+                    <th >{{fecha | date:'short'}}</th>
+                </tr>
+
+                <tr>
+                    <th>{{fecha}}</th>
+                    <th>date custom best</th>
+                    <th >Hora: {{fecha | date:'hh:mm'}}  Fecha: {{fecha | date:'dd/MM/yyyy'}}</th>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+    </div>
+
+</div>

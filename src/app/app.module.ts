@@ -26,6 +26,8 @@ import { PipersComponent } from './exercises/pipers/pipers.component';
 import { PipesCustomComponent } from './exercises/pipes-custom/pipes-custom.component';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { SecurDomPipe } from './pipes/secur-dom.pipe';
+import { LoginComponent } from './pages/login/login.component';
+import { GuardComponent } from './guard/guard.component';
 
 
 @NgModule({
@@ -48,6 +50,8 @@ import { SecurDomPipe } from './pipes/secur-dom.pipe';
     PipesCustomComponent,
     CapitalizePipe,
     SecurDomPipe,
+    GuardComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

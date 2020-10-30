@@ -9,13 +9,18 @@
 
 
 
-
+*{
+    margin: 0%;
+    padding: 0%;
+    color: white;
+}
 
 
 .ul-1{
     display: flex;
 list-style: none;
     user-select: none;
+
    
 }
 
@@ -24,16 +29,13 @@ list-style: none;
     color: white;
     font-size: 1.2em;
     margin: 1em;
+    padding: 0%;
     font-weight: 600;
     outline: none;
 
 }
 
 
-
-.li-1 >p:hover{
-    
-}
 
 
 .active{

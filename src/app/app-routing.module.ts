@@ -13,9 +13,15 @@ import { ReactFormComponent } from './exercises/react-form/react-form.component'
 import { ServiceComponent } from './exercises/service/service.component';
 import { StylesComponent } from './exercises/styles/styles.component';
 import { TemplateFormComponent } from './exercises/template-form/template-form.component';
+import { GuardComponent } from './guard/guard.component';
+import { AuthGuard } from './guards/auth.guard';
+
 import { IniComponent } from './ini/ini.component';
+import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
+  { path: 'guards', component: GuardComponent, canActivate: [AuthGuard] },
+  { path: 'login', component: LoginComponent },
   { path: 'events', component: EventsComponent },
   { path: 'formulario', component: FormularioComponent },
   { path: 'template-form', component: TemplateFormComponent },
